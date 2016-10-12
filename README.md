@@ -11,3 +11,7 @@ Oct. 11, 2016 Logs
 - Add the scaffolds for the Colours
 - Add the scaffolds for the Breweries
 - Add the scaffolds for the Wineries
+
+- Add the radio box for only single selection for beer to beertype relations
+- Add the radio box for only single selection for beer to colour relations
+- Add the radio box for only single selection for beer to brewery relations

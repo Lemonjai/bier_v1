@@ -5,6 +5,7 @@ class ColoursController < ApplicationController
   # GET /colours.json
   def index
     @colours = Colour.all
+    @beers = Beer.all
   end
 
   # GET /colours/1
@@ -15,10 +16,12 @@ class ColoursController < ApplicationController
   # GET /colours/new
   def new
     @colour = Colour.new
+    @beers = Beer.all
   end
 
   # GET /colours/1/edit
   def edit
+    @beers = Beer.all
   end
 
   # POST /colours
@@ -69,6 +72,6 @@ class ColoursController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def colour_params
-      params.require(:colour).permit(:name, :hexcode)
+      params.require(:colour).permit(:name, :hexcode, {:beer_ids => []})
     end
 end
