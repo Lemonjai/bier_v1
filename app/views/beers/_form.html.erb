@@ -3,7 +3,8 @@
 
   <div class="form-inputs">
     <%= f.input :name %>
-    <%= f.input :date %>
+    <%= f.input :date, label: "Release Date" %>
+    <%= collection_check_boxes(:beer, :beertype_ids, @beertypes, :id, :name) %>
   </div>
 
   <div class="form-actions">

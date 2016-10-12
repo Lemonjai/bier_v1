@@ -1,6 +1,6 @@
 #Bier Development Notes v1
 
-Oct. 11, 2016
+Oct. 11, 2016 Logs
 ====================
 - Add the gem for Bootstrap
 - Add the gem for Simple Form

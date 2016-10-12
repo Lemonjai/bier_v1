@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'main#index'
+
   resources :winetypes
   resources :wines
   resources :wineries

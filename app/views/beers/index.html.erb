@@ -7,6 +7,7 @@
     <tr>
       <th>Name</th>
       <th>Date</th>
+      <th>Beer Type</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= beer.name %></td>
         <td><%= beer.date %></td>
+        <td><%= beer.beertype.map {|a| a.name}.join(', ') %></td>
         <td><%= link_to 'Show', beer %></td>
         <td><%= link_to 'Edit', edit_beer_path(beer) %></td>
         <td><%= link_to 'Destroy', beer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -26,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Beer', new_beer_path %>
+<%= link_to 'New Beer', new_beer_path %> <%= link_to 'Main Page', root_path %>

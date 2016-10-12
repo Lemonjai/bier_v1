@@ -5,6 +5,7 @@ class BeertypesController < ApplicationController
   # GET /beertypes.json
   def index
     @beertypes = Beertype.all
+    @beer = Beer.all
   end
 
   # GET /beertypes/1
@@ -15,10 +16,12 @@ class BeertypesController < ApplicationController
   # GET /beertypes/new
   def new
     @beertype = Beertype.new
+    @beer = Beer.all
   end
 
   # GET /beertypes/1/edit
   def edit
+    @beer = Beer.all
   end
 
   # POST /beertypes
@@ -69,6 +72,6 @@ class BeertypesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def beertype_params
-      params.require(:beertype).permit(:name)
+      params.require(:beertype).permit(:name, {:beer_ids => []})
     end
 end
