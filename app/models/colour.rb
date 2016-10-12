@@ -1,4 +1,4 @@
 class Colour < ApplicationRecord
   has_many :categorizations
-  has_many :beer, through: :categorization
+  has_many :beers, through: :categorization
 end

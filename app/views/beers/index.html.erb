@@ -19,6 +19,7 @@
         <td><%= beer.name %></td>
         <td><%= beer.date %></td>
         <td><%= beer.beertype.map {|a| a.name}.join(', ') %></td>
+        <td><%= beer.colour.map {|b| b.name}.join(', ') %></td>
         <td><%= link_to 'Show', beer %></td>
         <td><%= link_to 'Edit', edit_beer_path(beer) %></td>
         <td><%= link_to 'Destroy', beer, method: :delete, data: { confirm: 'Are you sure?' } %></td>

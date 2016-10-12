@@ -4,7 +4,8 @@
   <div class="form-inputs">
     <%= f.input :name %>
     <%= f.input :date, label: "Release Date" %>
-    <%= collection_radio_buttons(:beer, :beertype_ids, @beertypes, :id, :name) %>
+    <%= f.collection_radio_buttons(:beertype_ids, @beertypes, :id, :name) %>
+    <%= f.collection_radio_buttons(:colour_ids, @colours, :id, :name) %>
   </div>
 
   <div class="form-actions">

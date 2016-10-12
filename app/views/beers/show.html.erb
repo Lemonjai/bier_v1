@@ -10,5 +10,15 @@
   <%= @beer.date %>
 </p>
 
+<p>
+  <strong>Beer Type:</strong>
+  <%= @beer.beertype.map {|a| a.name}.join(', ')%>
+</p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @beer.colour.map {|b| b.name}.join(', ') %>
+</p>
+
 <%= link_to 'Edit', edit_beer_path(@beer) %> |
 <%= link_to 'Back', beers_path %>
