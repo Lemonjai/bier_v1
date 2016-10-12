@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :winetypes
+  resources :wines
+  resources :wineries
   resources :beertypes
   resources :colours
   resources :breweries

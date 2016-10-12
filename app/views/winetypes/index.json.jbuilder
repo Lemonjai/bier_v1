@@ -1,0 +1,1 @@
+json.array! @winetypes, partial: 'winetypes/winetype', as: :winetype

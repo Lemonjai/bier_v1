@@ -1,0 +1,2 @@
+class Winetype < ApplicationRecord
+end

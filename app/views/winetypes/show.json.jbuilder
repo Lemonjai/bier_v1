@@ -1,0 +1,1 @@
+json.partial! "winetypes/winetype", winetype: @winetype

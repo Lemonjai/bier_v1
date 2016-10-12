@@ -1,24 +1,13 @@
-# README
+#Bier Development Notes v1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Oct. 11, 2016
+====================
+- Add the gem for Bootstrap
+- Add the gem for Simple Form
+- Add the scaffolds for the Beers
+- Add the scaffolds for the Wines
+- Add the scaffolds for the Beer Types
+- Add the scaffolds for the Wine Types
+- Add the scaffolds for the Colours
+- Add the scaffolds for the Breweries
+- Add the scaffolds for the Wineries
