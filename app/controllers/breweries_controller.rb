@@ -5,6 +5,7 @@ class BreweriesController < ApplicationController
   # GET /breweries.json
   def index
     @breweries = Brewery.all
+    @beers = Beer.all
   end
 
   # GET /breweries/1
@@ -15,10 +16,12 @@ class BreweriesController < ApplicationController
   # GET /breweries/new
   def new
     @brewery = Brewery.new
+    @beers = Beer.all
   end
 
   # GET /breweries/1/edit
   def edit
+    @beers = Beer.all
   end
 
   # POST /breweries
@@ -69,6 +72,6 @@ class BreweriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def brewery_params
-      params.require(:brewery).permit(:name, :addr1)
+      params.require(:brewery).permit(:name, :addr1, {:beer_ids => []})
     end
 end

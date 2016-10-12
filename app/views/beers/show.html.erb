@@ -11,6 +11,11 @@
 </p>
 
 <p>
+  <strong>Brewery:</strong>
+  <%= @beer.brewery.map {|c| c.name}.join(', ') %>
+</p>
+
+<p>
   <strong>Beer Type:</strong>
   <%= @beer.beertype.map {|a| a.name}.join(', ')%>
 </p>

@@ -12,8 +12,9 @@ Oct. 11, 2016 Logs
 - Add the scaffolds for the Breweries
 - Add the scaffolds for the Wineries
 
-- Add the radio box for only single selection for beer to beertype relations
-- Add the radio box for only single selection for beer to colour relations
+- Add the radio box for only single selection for beer to beertype's relations
+- Add the radio box for only single selection for beer to colour's relations
+- Add the radio box for only single selection for beer to brewery's relations
 
 **Note**
 Categorization controller ", optional: true" must be append to the "belongs_to" method in order for it to work.
