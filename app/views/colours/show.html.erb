@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @colour.name %>
+</p>
+
+<p>
+  <strong>Hexcode:</strong>
+  <%= @colour.hexcode %>
+</p>
+
+<%= link_to 'Edit', edit_colour_path(@colour) %> |
+<%= link_to 'Back', colours_path %>

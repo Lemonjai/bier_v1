@@ -1,0 +1,1 @@
+json.array! @beertypes, partial: 'beertypes/beertype', as: :beertype

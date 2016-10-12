@@ -1,0 +1,1 @@
+json.partial! "beertypes/beertype", beertype: @beertype

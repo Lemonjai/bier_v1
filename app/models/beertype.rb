@@ -1,0 +1,2 @@
+class Beertype < ApplicationRecord
+end
