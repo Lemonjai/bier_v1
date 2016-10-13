@@ -1,7 +1,14 @@
 #Bier Development Notes v1
 
+Oct. 12, 2016 Logs
+=============================
+- Add the winecategory model to hold the hastomanybelongsto for the wine
+- Add the radio box for only single selection for wine to winetype's relations
+- Add the radio box for only single selection for wine to winery's relations
+
+
 Oct. 11, 2016 Logs
-====================
+=============================
 - Add the gem for Bootstrap
 - Add the gem for Simple Form
 - Add the scaffolds for the Beers
@@ -17,7 +24,8 @@ Oct. 11, 2016 Logs
 - Add the radio box for only single selection for beer to brewery's relations
 
 **Note**
-Categorization controller ", optional: true" must be append to the "belongs_to" method in order for it to work.
+- Categorization controller ", optional: true" must be append to the "belongs_to" method in order for it to work.
+- Winecategories controller was added since it can be per post
 
 **Items Pendings**
 - Create the scaffolds for the posting => Completed Oct. 11

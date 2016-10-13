@@ -5,6 +5,7 @@ class WinetypesController < ApplicationController
   # GET /winetypes.json
   def index
     @winetypes = Winetype.all
+    @wines = Wine.all
   end
 
   # GET /winetypes/1
@@ -15,10 +16,12 @@ class WinetypesController < ApplicationController
   # GET /winetypes/new
   def new
     @winetype = Winetype.new
+    @wines = Wine.all
   end
 
   # GET /winetypes/1/edit
   def edit
+    @wines = Wine.all
   end
 
   # POST /winetypes
@@ -69,6 +72,6 @@ class WinetypesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def winetype_params
-      params.require(:winetype).permit(:name)
+      params.require(:winetype).permit(:name, {:wine_ids => []})
     end
 end
