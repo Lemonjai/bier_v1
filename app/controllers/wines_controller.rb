@@ -32,9 +32,7 @@
   def create
     @wine = Wine.new(wine_params)
 
-    begin
-      @winetypes = 
-    end
+    
 
     respond_to do |format|
       if @wine.save
