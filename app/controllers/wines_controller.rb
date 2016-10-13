@@ -6,6 +6,7 @@
   def index
     @wines = Wine.all
     @winetypes = Winetype.all
+    @wineries = Winery.all
   end
 
   # GET /wines/1
@@ -17,11 +18,13 @@
   def new
     @wine = Wine.new
     @winetypes = Winetype.all
+    @wineries = Winery.all
   end
 
   # GET /wines/1/edit
   def edit
     @winetypes = Winetype.all
+    @wineries = Winery.all
   end
 
   # POST /wines
@@ -72,6 +75,6 @@
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def wine_params
-      params.require(:wine).permit(:name, :winetype_ids)
+      params.require(:wine).permit(:name, :winetype_ids, :winery_ids)
     end
 end

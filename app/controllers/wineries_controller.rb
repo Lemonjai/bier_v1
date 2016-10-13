@@ -5,6 +5,7 @@ class WineriesController < ApplicationController
   # GET /wineries.json
   def index
     @wineries = Winery.all
+    @wines = Wine.all
   end
 
   # GET /wineries/1
@@ -15,10 +16,12 @@ class WineriesController < ApplicationController
   # GET /wineries/new
   def new
     @winery = Winery.new
+    @wines = Wine.all
   end
 
   # GET /wineries/1/edit
   def edit
+    @wines = Wine.all
   end
 
   # POST /wineries
@@ -69,6 +72,6 @@ class WineriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def winery_params
-      params.require(:winery).permit(:name, :addr1)
+      params.require(:winery).permit(:name, :addr1, {:wine_ids => []})
     end
 end
