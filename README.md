@@ -29,6 +29,8 @@ Oct. 11, 2016 Logs
 
 **Items Pendings**
 - Create the scaffolds for the posting => Completed Oct. 11
-- Create the association for the posting => 20% Completed Oct. 11
+- Create the association for the posting => 90% Completed Oct. 12
+- Fix the issue with the radio buttons not => Incomplete/pending
+- Fix the issue where logic for other components needs to be complete before posting => Incomplete/Pending
 - Add the styling for the post => Incomplete/Pending
 - Add the image importing => Incomplete/Pending

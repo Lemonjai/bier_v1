@@ -32,6 +32,10 @@
   def create
     @wine = Wine.new(wine_params)
 
+    begin
+      @winetypes = 
+    end
+
     respond_to do |format|
       if @wine.save
         format.html { redirect_to @wine, notice: 'Wine was successfully created.' }
